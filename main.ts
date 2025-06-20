@@ -1,19 +1,13 @@
 input.onButtonPressed(Button.A, function () {
-    Throttle += -10
+    Throttle = 0
+    Arm = 0
 })
-input.onButtonPressed(Button.AB, function () {
+input.onButtonPressed(Button.B, function () {
     if (Arm == 0) {
         Arm = 1
     } else {
         Arm = 0
     }
-})
-input.onButtonPressed(Button.B, function () {
-    Throttle += 10
-})
-input.onGesture(Gesture.Shake, function () {
-    Throttle = 0
-    Arm = 0
 })
 let Roll = 0
 let Arm = 0
